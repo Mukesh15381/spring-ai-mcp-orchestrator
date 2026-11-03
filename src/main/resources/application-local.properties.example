@@ -1,0 +1,14 @@
+# Copy this file to application-local.properties (git-ignored) and adjust for your machine.
+# Anything set here overrides application.properties.
+
+# Database (if yours is not on localhost:5432 / postgres / postgres)
+#spring.datasource.url=jdbc:postgresql://localhost:5433/vectordb
+#spring.datasource.username=postgres
+#spring.datasource.password=postgres
+
+# Postgres MCP server without npx: install once with
+#   npm install -g @modelcontextprotocol/server-postgres
+# then run it with an explicit Node >= 18 binary. Overriding the list replaces ALL args.
+#spring.ai.mcp.client.stdio.connections.postgres-db.command=/path/to/node
+#spring.ai.mcp.client.stdio.connections.postgres-db.args[0]=/path/to/node_modules/@modelcontextprotocol/server-postgres/dist/index.js
+#spring.ai.mcp.client.stdio.connections.postgres-db.args[1]=postgresql://postgres:postgres@localhost:5432/vectordb
